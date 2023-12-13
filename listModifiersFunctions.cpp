@@ -10,7 +10,7 @@ int main()
   // myList.push_front(22);
   // myList.pop_back();
   // myList.pop_front();
-  myList.insert(next(myList.begin(), 2), 100);
+  myList.insert(next(myList.begin(), 2), 1515);
 
   for (int val : myList)
   {
