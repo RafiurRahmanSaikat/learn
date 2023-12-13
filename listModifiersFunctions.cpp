@@ -3,10 +3,16 @@ using namespace std;
 int main()
 {
   list<int> myList = {1, 2, 3, 4, 5};
-  list<int> newList;
+  // list<int> newList;
   // newList = myList;
-  newList.assign(myList.begin(), myList.end());
-  for (int val : newList)
+  // newList.assign(myList.begin(), myList.end());
+  // myList.push_back(111);
+  // myList.push_front(22);
+  // myList.pop_back();
+  // myList.pop_front();
+  myList.insert(next(myList.begin(), 2), 100);
+
+  for (int val : myList)
   {
     cout << val << endl;
   }
