@@ -1,0 +1,274 @@
+{
+	//! ignore Settings
+	"settingsSync.ignoredSettings": [
+		"window.titleBarStyle",
+		"window.menuBarVisibility"
+	],
+	//! Themes
+	"editor.tabSize": 2,
+	"workbench.colorTheme": "GitHub Dark",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.preferredDarkColorTheme": "Learn with Sumit - Party",
+	"workbench.preferredHighContrastColorTheme": "Learn with Sumit - Party",
+	"workbench.preferredHighContrastLightColorTheme": "Learn with Sumit - Party",
+	"workbench.preferredLightColorTheme": "Learn with Sumit - Party",
+	"editor.fontSize": 25,
+	"files.autoSave": "onFocusChange",
+	"editor.wordWrap": "on",
+	"editor.guides.bracketPairs": true,
+	"editor.mouseWheelZoom": true,
+	"files.trimTrailingWhitespace": true,
+
+	//! editor Font
+
+	"editor.fontFamily": "Operator Mono",
+	"editor.fontLigatures": true,
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": [
+					// the following elements will be in italic
+					"comment",
+					"storage.modifier", // static keyword
+					"storage.type.php", // typehints in methods keyword
+					"keyword.other.new.php", // new
+					"entity.other.attribute-name", // html attributes
+					"fenced_code.block.language.markdown", // markdown language modifier
+					"keyword", //import, export, return…
+					"storage.modifier", //static keyword
+					"storage.type", //class keyword
+					"keyword.control",
+					"constant.language",
+					"entity.other.attribute-name",
+					"entity.name.method",
+					"keyword.control.import.ts",
+					"keyword.control.import.tsx",
+					"keyword.control.import.js",
+					"keyword.control.flow.js",
+					"keyword.control.from.js",
+					"keyword.control.from.ts",
+					"keyword.control.from.tsx"
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": [
+					// the following elements will be displayed in bold
+					"entity.name.type.class" // class names
+				],
+				"settings": {
+					"fontStyle": "italic bold"
+				}
+			},
+			{
+				"scope": [
+					// the following elements will be displayed in bold and italic
+					"entity.name.section.markdown" // markdown headlines
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": [
+					// the following elements will be excluded from italics
+					//   (VSCode has some defaults for italics)
+					"invalid",
+					"keyword.operator",
+					"constant.numeric.css",
+					"keyword.other.unit.px.css",
+					"constant.numeric.decimal.js",
+					"constant.numeric.json",
+					"comment.block",
+					"entity.other.attribute-name.class.css"
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			}
+		],
+		"[Theme]": {
+			"textMateRules": [
+				{
+					"scope": "comment",
+					"settings": {
+						"fontStyle": "italic bold"
+					}
+				},
+				{
+					"scope": ["source.python"],
+					"settings": {
+						"foreground": "#e06c75"
+					}
+				}
+			]
+		}
+	},
+
+	//! code formatting
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.formatOnSave": true,
+	"prettier.arrowParens": "always",
+	"prettier.bracketSameLine": true,
+	"prettier.bracketSpacing": true,
+	"prettier.semi": false,
+	"prettier.singleQuote": true,
+	"prettier.jsxSingleQuote": true,
+	"prettier.quoteProps": "consistent",
+	"prettier.trailingComma": "all",
+	"prettier.singleAttributePerLine": true,
+	"prettier.htmlWhitespaceSensitivity": "css",
+	"prettier.vueIndentScriptAndStyle": false,
+	"prettier.proseWrap": "always",
+	"prettier.insertPragma": false,
+	"prettier.printWidth": 80,
+	"prettier.requirePragma": false,
+	"prettier.tabWidth": 2,
+	"prettier.useTabs": true,
+	"prettier.embeddedLanguageFormatting": "auto",
+	"editor.linkedEditing": true,
+	"reactSnippets.settings.prettierEnabled": true,
+
+	// "editor.codeActionsOnSave": {
+	// 	"source.fixAll.eslint": true,
+	// 	"source.fixAll.tslint": true,
+	// 	"source.organizeImports": true
+	// },
+
+	//! cursor
+
+	"editor.cursorWidth": 5,
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.cursorBlinking": "expand",
+
+	//! terminal customization
+
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"terminal.integrated.defaultProfile.linux": "bash",
+	"terminal.integrated.fontSize": 14,
+	// "workbench.colorCustomizations": {
+	// 	// "terminal.background": "#1D2021",
+	// 	// "terminal.foreground": "#A89984",
+	// 	"terminalCursor.background": "#A89984",
+	// 	"terminalCursor.foreground": "#A89984",
+	// 	"terminal.ansiBlack": "#1D2021",
+	// 	"terminal.ansiBlue": "#0D6678",
+	// 	"terminal.ansiBrightBlack": "#665C54",
+	// 	"terminal.ansiBrightBlue": "#0D6678",
+	// 	"terminal.ansiBrightCyan": "#8BA59B",
+	// 	"terminal.ansiBrightGreen": "#95C085",
+	// 	"terminal.ansiBrightMagenta": "#8F4673",
+	// 	"terminal.ansiBrightRed": "#FB543F",
+	// 	"terminal.ansiBrightWhite": "#FDF4C1",
+	// 	"terminal.ansiBrightYellow": "#FAC03B",
+	// 	"terminal.ansiCyan": "#8BA59B",
+	// 	"terminal.ansiGreen": "#95C085",
+	// 	"terminal.ansiMagenta": "#8F4673",
+	// 	"terminal.ansiRed": "#FB543F",
+	// 	"terminal.ansiWhite": "#A89984",
+	// 	"terminal.ansiYellow": "#FAC03B"
+	// },
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact",
+		"typescriptreact": "typescriptreact"
+	},
+	"tailwindCSS.emmetCompletions": true,
+	"tailwindCSS.includeLanguages": {
+		"javascript": "javascript",
+		"javascriptreact": "javascriptreact",
+		"typescript": "typescript",
+		"typescriptreact": "typescriptreact",
+		"html": "HTML"
+	},
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"tabnine.experimentalAutoImports": true,
+	"git.autofetch": true,
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	// ? Compiler Settings
+
+	"C_Cpp.default.cppStandard": "c++20",
+	"C_Cpp.default.cStandard": "c11",
+	"code-runner.terminalRoot": "/",
+	"code-runner.executorMapByGlob": {
+		"pom.xml": "cd $dir && mvn clean package"
+	},
+
+	"code-runner.runInTerminal": true,
+	"code-runner.enableAppInsights": false,
+	"code-runner.saveFileBeforeRun": true,
+	"code-runner.saveAllFilesBeforeRun": true,
+	"code-runner.executorMap": {
+		"javascript": "node",
+		"java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+		"zig": "zig run",
+		"objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"php": "php",
+		"python": "python -u",
+		"perl": "perl",
+		"perl6": "perl6",
+		"ruby": "ruby",
+		"go": "go run",
+		"lua": "lua",
+		"groovy": "groovy",
+		"powershell": "powershell -ExecutionPolicy ByPass -File",
+		"bat": "cmd /c",
+		"shellscript": "bash",
+		"fsharp": "fsi",
+		"csharp": "scriptcs",
+		"vbscript": "cscript //Nologo",
+		"typescript": "ts-node",
+		"coffeescript": "coffee",
+		"scala": "scala",
+		"swift": "swift",
+		"julia": "julia",
+		"crystal": "crystal",
+		"ocaml": "ocaml",
+		"r": "Rscript",
+		"applescript": "osascript",
+		"clojure": "lein exec",
+		"haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+		"rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+		"racket": "racket",
+		"scheme": "csi -script",
+		"ahk": "autohotkey",
+		"autoit": "autoit3",
+		"dart": "dart",
+		"pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+		"d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+		"haskell": "runghc",
+		"nim": "nim compile --verbosity:0 --hints:off --run",
+		"lisp": "sbcl --script",
+		"kit": "kitc --run",
+		"v": "v run",
+		"sass": "sass --style expanded",
+		"scss": "scss --style expanded",
+		"less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+		"FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"sml": "cd $dir && sml $fileName",
+		"c": "cd $dir && gcc $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe < input.txt > output.txt",
+		"cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe < input.txt > output.txt"
+		// "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.exe && $dir$fileNameWithoutExt.exe"
+	},
+	"terminal.integrated.fontFamily": "FiraCode Nerd Font"
+}
